@@ -121,8 +121,6 @@ switch((string)$sort_by)
                 $link = $_SERVER['REQUEST_URI']; 
 
                 // get the link 
-                $link = str_replace('/movies/','',$link); 
-                // replace the url extra folder directory
                 $max_pages = intval(($count-1)/10);
                 for($x=1;$x<$max_pages;$x++)
                 $link = str_replace('&page='.$x,'',$link); 
